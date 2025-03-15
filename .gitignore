@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+npm-debug.log*
+
+# Ambiente
+.env
+.env.local
+.env.development
+.env.production
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+
+# IDEs e Editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Docker (se aplicável)
+docker-compose.override.yml
