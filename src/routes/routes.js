@@ -4,12 +4,14 @@ import { userController } from '../controllers/userController.js';
 
 const router = express.Router();
 
-// Rotas para gerenciamento de uso (app_usage)
-router.post('/usage', usageController.saveUsage);
-router.get('/usage/:userId', usageController.getUsage);
-
 // Rotas para usuários
 router.post('/users/register', userController.register);
 router.post('/users/login', userController.login);
+
+// Rotas para gerenciamento de uso (app_usage)
+router.get('/usage/:userId', usageController.getUsage);
+router.post('/usage', usageController.saveUsage);
+
+
 
 export default router;
